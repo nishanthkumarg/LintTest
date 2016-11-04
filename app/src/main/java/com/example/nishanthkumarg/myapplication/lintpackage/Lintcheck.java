@@ -1,5 +1,6 @@
 package com.example.nishanthkumarg.myapplication.lintpackage;
 
+import android.support.annotation.RestrictTo;
 import android.support.annotation.VisibleForTesting;
 
 /**
@@ -8,8 +9,17 @@ import android.support.annotation.VisibleForTesting;
 
 public class Lintcheck {
 
-    @VisibleForTesting(otherwise = VisibleForTesting.PROTECTED)
+    Lintcheck(){
+
+    }
+
+    @VisibleForTesting(otherwise = VisibleForTesting.PRIVATE)
     public void sampleFunction(){
 
     }
+
+    public void sampleFunction2(){
+
+    }
+
 }

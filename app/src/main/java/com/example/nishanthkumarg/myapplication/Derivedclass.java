@@ -13,12 +13,8 @@ public class Derivedclass extends BaseClass{
     Derivedclass(){
         bc.baseFunction();
         lb.function();
-        tcls.sampleFunction();
-        lc.sampleFunction();
     }
     BaseClass bc = new BaseClass();
     LibClass lb = new LibClass();
     TestRestrClass tcls = new TestRestrClass();
-    Lintcheck lc = new Lintcheck();
-
 }
