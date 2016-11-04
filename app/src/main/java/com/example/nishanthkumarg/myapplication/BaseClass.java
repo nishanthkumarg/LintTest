@@ -12,11 +12,8 @@ import static android.support.annotation.RestrictTo.Scope.GROUP_ID;
 
 public class BaseClass {
 
-
-
     @RestrictTo(RestrictTo.Scope.SUBCLASSES)
     public void baseFunction(){
-
 
     }
 }

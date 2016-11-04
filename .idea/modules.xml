@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/LintTest.iml" filepath="$PROJECT_DIR$/LintTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LintProject.iml" filepath="$PROJECT_DIR$/LintProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/mylibrary/mylibrary.iml" filepath="$PROJECT_DIR$/mylibrary/mylibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/mylibrary-debug/mylibrary-debug.iml" filepath="$PROJECT_DIR$/mylibrary-debug/mylibrary-debug.iml" />

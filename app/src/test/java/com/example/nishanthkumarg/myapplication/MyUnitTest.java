@@ -9,10 +9,12 @@ import com.example.nishanthkumarg.myapplication.lintpackage.Lintcheck;
 public class MyUnitTest {
 
     TestRestrClass  tcls = new TestRestrClass();
-    Lintcheck lc = new Lintcheck();
+
 
     MyUnitTest(){
-        tcls.sampleFunction();
-
+        tcls.functionProtected();
+        tcls.functionNone();
+        tcls.functionPackagePrivate();
+        tcls.functionPrivate();
     }
 }

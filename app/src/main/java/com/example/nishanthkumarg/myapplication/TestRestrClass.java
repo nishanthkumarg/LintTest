@@ -9,8 +9,27 @@ import android.support.annotation.VisibleForTesting;
 
 public class TestRestrClass {
 
+    public TestRestrClass() {
+        functionPrivate();
+    }
+
     @VisibleForTesting(otherwise = VisibleForTesting.PRIVATE)
-    public void sampleFunction(){
+    public void functionPrivate(){
+
+    }
+
+    @VisibleForTesting(otherwise = VisibleForTesting.PACKAGE_PRIVATE)
+    public void functionPackagePrivate(){
+
+    }
+
+    @VisibleForTesting(otherwise = VisibleForTesting.PROTECTED)
+    public void functionProtected(){
+
+    }
+
+    @VisibleForTesting(otherwise = VisibleForTesting.NONE)
+    public void functionNone(){
 
     }
 }

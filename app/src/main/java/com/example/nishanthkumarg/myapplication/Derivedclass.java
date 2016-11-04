@@ -10,11 +10,12 @@ import com.example.nishanthkumarg.myapplication.lintpackage.Lintcheck;
 
 public class Derivedclass extends BaseClass{
 
+    BaseClass bc = new BaseClass();
+    LibClass lb = new LibClass();
+    TestRestrClass tcls = new TestRestrClass();
+
     Derivedclass(){
         bc.baseFunction();
         lb.function();
     }
-    BaseClass bc = new BaseClass();
-    LibClass lb = new LibClass();
-    TestRestrClass tcls = new TestRestrClass();
 }
