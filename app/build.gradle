@@ -1,7 +1,15 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
+    signingConfigs {
+        config {
+            keyAlias 'test123'
+            keyPassword 'test123'
+            storeFile file('/usr/local/google/home/naveenkumark/KeyStore/Keys.jks')
+            storePassword 'test123'
+        }
+    }
+    compileSdkVersion 24
     buildToolsVersion "25.0.0"
     defaultConfig {
         applicationId "com.example.nishanthkumarg.myapplication"
@@ -10,10 +18,12 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.config
     }
+    //resourcePrefix 'my_bonda_'
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -22,6 +32,8 @@ android {
         baseline file("lint-baseline.xml")
 
 
+    }
+    productFlavors {
     }
 }
 
@@ -34,4 +46,5 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.0-beta2'
     testCompile 'junit:junit:4.12'
     compile project(':mylibrary')
+    compile 'com.android.support:design:25.0.0'
 }
