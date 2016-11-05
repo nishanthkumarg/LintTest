@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
         WifiManager wifi = (WifiManager)getSystemService(Context.WIFI_SERVICE);
         WifiManager wifi1 = (WifiManager)getApplicationContext().getSystemService(Context.WIFI_SERVICE);

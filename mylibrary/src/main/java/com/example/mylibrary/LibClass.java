@@ -2,15 +2,17 @@ package com.example.mylibrary;
 
 import android.support.annotation.RestrictTo;
 
-import static android.support.annotation.RestrictTo.Scope.GROUP_ID;
-
 /**
- * Created by nishanthkumarg on 11/2/16.
+ * Created by nishanthkumarg on 11/4/16.
  */
-@RestrictTo(GROUP_ID)
+
+@RestrictTo(RestrictTo.Scope.GROUP_ID)
 public class LibClass {
 
-    public void function(){
+    public LibClass() {
+    }
+
+    public void sampleMethod(){
 
     }
 }
