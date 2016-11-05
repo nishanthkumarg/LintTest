@@ -1,15 +1,14 @@
 package com.example.nishanthkumarg.myapplication;
 
-import android.support.annotation.RestrictTo;
 import android.support.annotation.VisibleForTesting;
 
 /**
- * Created by nishanthkumarg on 11/3/16.
+ * Created by nishanthkumarg on 11/4/16.
  */
 
-public class TestRestrClass {
+public class LintCheck {
 
-    public TestRestrClass() {
+    public LintCheck() {
         functionPrivate();
     }
 

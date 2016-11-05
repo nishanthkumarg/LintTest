@@ -1,21 +1,32 @@
 package com.example.nishanthkumarg.myapplication;
 
-
-import com.example.mylibrary.LibClass;
-import com.example.nishanthkumarg.myapplication.lintpackage.Lintcheck;
-
 /**
- * Created by nishanthkumarg on 11/2/16.
+ * Created by nishanthkumarg on 11/4/16.
  */
 
-public class Derivedclass extends BaseClass{
+public class Derivedclass extends LintCheck {
 
-    BaseClass bc = new BaseClass();
-    LibClass lb = new LibClass();
-    TestRestrClass tcls = new TestRestrClass();
+    public Derivedclass() {
+        super();
+    }
 
-    Derivedclass(){
-        bc.baseFunction();
-        lb.function();
+    @Override
+    public void functionPackagePrivate() {
+        super.functionPackagePrivate();
+    }
+
+    @Override
+    public void functionPrivate() {
+        super.functionPrivate();
+    }
+
+    @Override
+    public void functionNone() {
+        super.functionNone();
+    }
+
+    @Override
+    public void functionProtected() {
+        super.functionProtected();
     }
 }
