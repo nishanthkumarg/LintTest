@@ -18,10 +18,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        //Wifimanager, A lint error should show up when Wifi manager is used without using getApplicationContext()
         setContentView(R.layout.activity_main);
         WifiManager wifi = (WifiManager)getSystemService(Context.WIFI_SERVICE);
+
+        //This Code should work fine without any lint errors
         WifiManager wifi1 = (WifiManager)getApplicationContext().getSystemService(Context.WIFI_SERVICE);
 
+        //SDK_INT Lint checks
         if (Build.VERSION.SDK_INT >= 14) {
             codeRequiresApi14();
         }
@@ -36,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         animatorTest();
     }
 
+    //Object animator test: when Lint check runs, A Lint error should show up to Add @Keep annotation for below two animators
     private void animatorTest(){
         ObjectAnimator flipOutAnimator = ObjectAnimator.ofFloat(this, "FlipOutView", 0, 90);
         ObjectAnimator flipOutAnimator1 = ObjectAnimator.ofFloat(this, "FlipOutView1", 0, 90);
