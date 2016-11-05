@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         //This Code should work fine without any lint errors
         WifiManager wifi1 = (WifiManager)getApplicationContext().getSystemService(Context.WIFI_SERVICE);
 
-        //SDK_INT Lint checks
+        //SDK_INT Lint checks, Quick Fix need to show up to unwrap of conditions according to the minimum version applied to the project
         if (Build.VERSION.SDK_INT >= 14) {
             codeRequiresApi14();
         }
