@@ -1,10 +1,8 @@
 package com.example.nishanthkumarg.myapplication;
 
-import com.example.nishanthkumarg.myapplication.lintpackage.Lintcheck;
-
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Example local unit test, which will execute on the development machine (host).

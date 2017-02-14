@@ -6,9 +6,12 @@ package com.example.nishanthkumarg.myapplication;
 
 public class MyClass {
 
-    WithInPackage tcls = new WithInPackage();
+    LintCheck lc = new LintCheck();
 
     MyClass(){
-        tcls.sampleFunction();
+        lc.functionNone();
+        lc.functionPackagePrivate();
+        lc.functionPrivate();
+        lc.functionProtected();
     }
 }
