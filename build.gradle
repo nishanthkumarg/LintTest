@@ -4,11 +4,11 @@ buildscript {
     repositories {
         jcenter()
         maven{
-            url "/Users/nishanthkumarg/Nishanth/2.3/3427883/Android Studio.app/Contents/gradle/m2repository/"
+            url "/Users/nishanthkumarg/Nishanth/2.3/3715353/Android Studio.app/Contents/gradle/m2repository/"
         }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.0-alpha1'
+        classpath 'com.android.tools.build:gradle:2.3.0-beta4'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files

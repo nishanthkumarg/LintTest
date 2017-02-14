@@ -14,7 +14,8 @@ public class Derivedclass extends BaseClass{
     LibClass lb = new LibClass();
     TestRestrClass tcls = new TestRestrClass();
 
-    Derivedclass(){
+    public Derivedclass(){
+
         bc.baseFunction();
         lb.function();
     }
