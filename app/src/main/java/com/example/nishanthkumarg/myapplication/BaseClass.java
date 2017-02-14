@@ -1,7 +1,6 @@
 package com.example.nishanthkumarg.myapplication;
 
 import android.support.annotation.RestrictTo;
-import android.support.annotation.VisibleForTesting;
 
 /**
  * Created by nishanthkumarg on 11/4/16.
@@ -10,14 +9,13 @@ import android.support.annotation.VisibleForTesting;
 public class BaseClass {
 
     public BaseClass() {
-        functionPrivate();
+        restrictScopeSubClass();
     }
 
     @RestrictTo(RestrictTo.Scope.SUBCLASSES)
-    public void functionPrivate(){
+    public void restrictScopeSubClass(){
 
     }
-
 
     public void functionPackagePrivate(){
 

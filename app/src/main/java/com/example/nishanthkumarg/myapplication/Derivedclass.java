@@ -6,8 +6,11 @@ package com.example.nishanthkumarg.myapplication;
 
 public class Derivedclass extends BaseClass {
 
+    Derivedclass(){
+
+    }
     @Override
-    public void functionPrivate() {
-        super.functionPrivate();
+    public void restrictScopeSubClass() {
+        super.restrictScopeSubClass();
     }
 }
