@@ -13,8 +13,8 @@ android {
     buildToolsVersion "25.0.2"
     defaultConfig {
         applicationId "com.example.nishanthkumarg.myapplication"
-        minSdkVersion 18
-        targetSdkVersion 21
+        minSdkVersion 21
+        targetSdkVersion 25
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -29,8 +29,9 @@ android {
         }
     }
     lintOptions {
-        check 'NewApi', 'HandlerLeak','Deprecated'
+        check 'NewApi', 'HandlerLeak','MissingPermission','MissingSuperCall'
         baseline file("lint-baseline.xml")
+        abortOnError false
     }
     productFlavors {
     }
@@ -41,9 +42,9 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:25.1.1'
-    compile 'com.android.support.constraint:constraint-layout:1.0.0-beta4'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
     compile project(':mylibrary')
-    compile 'com.android.support:design:25.1.1'
+    compile 'com.android.support:design:25.3.1'
 }

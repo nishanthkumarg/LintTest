@@ -1,26 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<issues format="4" by="lint 2.3.0-beta4">
+<issues format="4" by="lint 2.4.0-alpha6">
+
+    <issue
+        id="MissingPermission"
+        message="Missing permissions required by LocationManager.getLastKnownLocation: android.permission.ACCESS_COARSE_LOCATION or android.permission.ACCESS_FINE_LOCATION"
+        errorLine1="        ((LocationManager)getSystemService(Context.LOCATION_SERVICE)).getLastKnownLocation(&quot;test&quot;);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/nishanthkumarg/myapplication/MainActivity.java"
+            line="33"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="MissingSuperCall"
+        message="Overriding method should call `super.onCreate`"
+        errorLine1="    protected void onCreate(Bundle savedInstanceState) {"
+        errorLine2="                   ~~~~~~~~">
+        <location
+            file="src/main/java/com/example/nishanthkumarg/myapplication/MainActivity.java"
+            line="28"
+            column="20"/>
+    </issue>
 
     <issue
         id="NewApi"
-        message="Call requires API level 24 (current min is 18): `android.os.UserManager#supportsMultipleUsers`"
-        errorLine1="        UserManager.supportsMultipleUsers();"
-        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~">
+        message="Call requires API level 23 (current min is 21): android.content.Context#getSystemService"
+        errorLine1="        FingerprintManager fingerprintManager = getSystemService(FingerprintManager.class);"
+        errorLine2="                                                ~~~~~~~~~~~~~~~~">
         <location
             file="src/main/java/com/example/nishanthkumarg/myapplication/MainActivity.java"
-            line="43"
-            column="21"/>
+            line="32"
+            column="49"/>
+    </issue>
+
+    <issue
+        id="NewApi"
+        message="Class requires API level 23 (current min is 21): android.hardware.fingerprint.FingerprintManager"
+        errorLine1="        FingerprintManager fingerprintManager = getSystemService(FingerprintManager.class);"
+        errorLine2="                                                                 ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/nishanthkumarg/myapplication/MainActivity.java"
+            line="32"
+            column="66"/>
     </issue>
 
     <issue
         id="HandlerLeak"
         message="This Handler class should be static or leaks might occur (anonymous android.os.Handler)"
         errorLine1="    private final Handler mLeakyHandler = new Handler(){"
-        errorLine2="                                              ~~~~~~~">
+        errorLine2="                                          ^">
         <location
             file="src/main/java/com/example/nishanthkumarg/myapplication/MainActivity.java"
-            line="24"
-            column="47"/>
+            line="18"
+            column="43"/>
     </issue>
 
 </issues>

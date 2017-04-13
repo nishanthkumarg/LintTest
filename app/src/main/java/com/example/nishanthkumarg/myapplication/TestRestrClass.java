@@ -13,7 +13,7 @@ public class TestRestrClass {
         functionPrivate();
     }
 
-    @VisibleForTesting(otherwise = VisibleForTesting.PRIVATE)
+    @VisibleForTesting(otherwise = VisibleForTesting.PACKAGE_PRIVATE)
     public void functionPrivate(){
 
     }

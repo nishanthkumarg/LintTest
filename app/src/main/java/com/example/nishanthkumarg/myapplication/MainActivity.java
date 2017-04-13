@@ -1,5 +1,8 @@
 package com.example.nishanthkumarg.myapplication;
 
+import android.content.Context;
+import android.hardware.fingerprint.FingerprintManager;
+import android.location.LocationManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -19,10 +22,16 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+        //super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         android.widget.AbsoluteLayout la = new AbsoluteLayout(this);
+        FingerprintManager fingerprintManager = getSystemService(FingerprintManager.class);
+        ((LocationManager)getSystemService(Context.LOCATION_SERVICE)).getLastKnownLocation("test");
+
+
     }
 }
