@@ -6,13 +6,5 @@ package com.example.nishanthkumarg.myapplication;
 
 public class MyUnitTest {
 
-    WithInPackage tcls = new WithInPackage();
 
-
-    MyUnitTest(){
-        tcls.functionProtected();
-        tcls.functionNone();
-        tcls.functionPackagePrivate();
-        tcls.functionPrivate();
-    }
 }

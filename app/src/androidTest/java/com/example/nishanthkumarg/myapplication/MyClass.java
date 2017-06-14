@@ -6,9 +6,5 @@ package com.example.nishanthkumarg.myapplication;
 
 public class MyClass {
 
-    WithInPackage tcls = new WithInPackage();
 
-    MyClass(){
-        tcls.sampleFunction();
-    }
 }
