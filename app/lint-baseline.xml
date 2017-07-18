@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<issues format="4" by="lint 2.4.0-alpha6">
+<issues format="4" by="lint 3.0.0-alpha7">
 
     <issue
         id="MissingPermission"
@@ -8,7 +8,7 @@
         errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="src/main/java/com/example/nishanthkumarg/myapplication/MainActivity.java"
-            line="33"
+            line="34"
             column="9"/>
     </issue>
 
@@ -30,7 +30,7 @@
         errorLine2="                                                ~~~~~~~~~~~~~~~~">
         <location
             file="src/main/java/com/example/nishanthkumarg/myapplication/MainActivity.java"
-            line="32"
+            line="33"
             column="49"/>
     </issue>
 
@@ -41,7 +41,7 @@
         errorLine2="                                                                 ~~~~~~~~~~~~~~~~~~">
         <location
             file="src/main/java/com/example/nishanthkumarg/myapplication/MainActivity.java"
-            line="32"
+            line="33"
             column="66"/>
     </issue>
 

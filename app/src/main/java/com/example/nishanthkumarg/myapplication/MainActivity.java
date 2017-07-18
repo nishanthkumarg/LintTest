@@ -13,7 +13,7 @@ import android.widget.ImageView;
 //import android.support.v7.widget.DividerItemDecoration;
 
 public class MainActivity extends AppCompatActivity {
-    private final ImageView flipOutView = new ImageView(this);
+
 
     private final Handler mLeakyHandler = new Handler(){
         @Override
@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         //super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ImageView flipOutView = new ImageView(this);
         android.widget.AbsoluteLayout la = new AbsoluteLayout(this);
         FingerprintManager fingerprintManager = getSystemService(FingerprintManager.class);
         ((LocationManager)getSystemService(Context.LOCATION_SERVICE)).getLastKnownLocation("test");
