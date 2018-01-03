@@ -1,15 +1,18 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
+    ext.kotlin_version = '1.2.10'
     repositories {
         google()
         jcenter()
         maven{
-            url "/Users/nishanthkumarg/Nishanth/2.3/3427883/Android Studio.app/Contents/gradle/m2repository/"
+            url "/Applications/Android Studio 3.1 Preview.app/Contents/gradle/m2repository/"
         }
+
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.0-alpha5'
+        classpath 'com.android.tools.build:gradle:3.1.0-alpha07'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -20,6 +23,9 @@ allprojects {
     repositories {
         google()
         jcenter()
+        maven{
+            url "/Applications/Android Studio 3.1 Preview.app/Contents/gradle/m2repository/"
+        }
     }
 }
 

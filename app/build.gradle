@@ -1,16 +1,17 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
 
 android {
     signingConfigs {
-        config {
+        /*config {
             keyAlias 'test123'
             keyPassword 'test123'
             storeFile file('/usr/local/google/home/naveenkumark/KeyStore/Keys.jks')
             storePassword 'test123'
-        }
+        }*/
     }
     compileSdkVersion 26
-    buildToolsVersion "26.0.0"
+    buildToolsVersion "27.0.3"
     defaultConfig {
         applicationId "com.example.nishanthkumarg.myapplication"
         minSdkVersion 21
@@ -18,7 +19,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-        signingConfig signingConfigs.config
+        //signingConfig signingConfigs.config
     }
     //resourcePrefix 'my_bonda_'
     buildTypes {
@@ -30,6 +31,7 @@ android {
 
     lintOptions {
         baseline file("lint-baseline.xml")
+        //abortOnError false
     }
 
     productFlavors {
@@ -46,4 +48,8 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:design:26.0.0-beta1'
     compile project(':mylibrary-release')
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
+repositories {
+    mavenCentral()
 }
